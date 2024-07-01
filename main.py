@@ -9,6 +9,8 @@ st.title("Patricia's Pdf Assistant")
 # Streamlit sidebar form
 with st.sidebar:
     with st.form(key='my_form'):
+        st.cache_data.clear()
+        st.cache_resource.clear()
         uploaded_file = st.file_uploader("Choose a PDF file", type="pdf")
         if uploaded_file is not None:
             pdf_data = uploaded_file.getvalue()
