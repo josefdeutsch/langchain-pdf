@@ -34,8 +34,8 @@ def get_language_model():
 @st.cache_resource
 def get_vector_store_info(_db):
     vectorstore_info = VectorStoreInfo(
-        name="annual_report",
-        description="a banking annual report as a pdf",
+        name="Report",
+        description="Report as a pdf",
         vectorstore=_db
     )
     return vectorstore_info
