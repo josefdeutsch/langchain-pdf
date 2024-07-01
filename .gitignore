@@ -1,0 +1,24 @@
+# Exclude virtual environment directory
+venv/
+
+# Exclude Streamlit configuration directory
+.streamlit/
+
+# Other common directories and files to exclude
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.log
+*.pot
+*.mo
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.iml
+.env
