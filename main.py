@@ -17,7 +17,7 @@ with st.sidebar:
             pages = ph.load_pdf_from_streamlit(pdf_data)
         query = st.text_area(
             label="Ask me about the PDF?",
-            max_chars=150,
+            max_chars=3000,
             key="query",
             height=None
         )
