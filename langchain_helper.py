@@ -28,7 +28,7 @@ def get_retriever_from_database(_db):
 
 @st.cache_resource
 def get_language_model():
-    llm = ChatOpenAI(model="gpt-3.5-turbo-0125", temperature=0)
+    llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
     return llm
 
 @st.cache_resource
